@@ -43,6 +43,9 @@ const company = {
 
 function findValueByKey(object, companyName) {
     let result = null;
+  if(object.name === companyName){
+  result = object;
+  return result;}
     const arrayToIterateOn = object.clients || object.partners;
     for (let i = 0; i < arrayToIterateOn.length; i++) {
       const client = arrayToIterateOn[i];
