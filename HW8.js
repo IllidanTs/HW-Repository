@@ -59,7 +59,7 @@ function findValueByKey(object, companyName) {
     return result;
   }
 
-const foundCompany = findValueByKey(company, 'Клієнт 1.2');
+const foundCompany = findValueByKey(company, 'Клієнт 1.2.3');
 if (foundCompany) {
     console.log(foundCompany);
 } else {
